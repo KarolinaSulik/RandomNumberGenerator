@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zufallszahlengenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zufallszahlengenerator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acJ-Pv-FZK">
+                                <rect key="frame" x="30" y="114" width="354" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="27"/>
+                                <color key="textColor" red="0.06254586577" green="0.1862284541" blue="0.2784425318" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-20-Y0F">
+                                <rect key="frame" x="0.0" y="222" width="414" height="216"/>
+                                <color key="tintColor" red="0.06254586577" green="0.1862284541" blue="0.2784425318" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-nb-gm9">
+                                <rect key="frame" x="20" y="772" width="374" height="55"/>
+                                <color key="backgroundColor" red="0.95052367449999997" green="0.75752878189999995" blue="0.3724497557" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="UDU-zD-UhY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="21"/>
+                                <color key="tintColor" red="0.06254586577" green="0.1862284541" blue="0.2784425318" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Zahl zwichen 0 und 100 wählen">
+                                    <color key="titleColor" red="0.06254586577" green="0.1862284541" blue="0.2784425318" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE6-Ps-GRz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="929-36-IO1">
+                                <rect key="frame" x="172" y="622" width="70" height="65"/>
+                                <color key="backgroundColor" red="0.95052367449999997" green="0.75752878189999995" blue="0.3724497557" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.77039855719999994" green="0.22869688269999999" blue="0.19604390860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="fWj-Kq-OQJ"/>
+                                    <constraint firstAttribute="height" constant="65" id="lkG-Wb-kon"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="34"/>
+                                <color key="textColor" red="0.77039855719999994" green="0.22869688269999999" blue="0.19604390860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="acJ-Pv-FZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="53a-98-QSE"/>
+                            <constraint firstItem="jUU-20-Y0F" firstAttribute="top" secondItem="acJ-Pv-FZK" secondAttribute="bottom" constant="70" id="9le-ES-Ob2"/>
+                            <constraint firstItem="jUU-20-Y0F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H8C-D7-YJv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jKB-nb-gm9" secondAttribute="bottom" constant="35" id="PSY-pQ-Cfx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jKB-nb-gm9" secondAttribute="trailing" constant="20" id="bih-kE-Lil"/>
+                            <constraint firstItem="929-36-IO1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKl-KB-WaH"/>
+                            <constraint firstItem="acJ-Pv-FZK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="e1x-Cj-XnP"/>
+                            <constraint firstItem="jKB-nb-gm9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mXg-4K-eCb"/>
+                            <constraint firstItem="jKB-nb-gm9" firstAttribute="top" secondItem="929-36-IO1" secondAttribute="bottom" constant="85" id="o3Q-Vy-4Lz"/>
+                            <constraint firstItem="jUU-20-Y0F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sEZ-Pt-WdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acJ-Pv-FZK" secondAttribute="trailing" constant="30" id="xll-89-zVg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="jKB-nb-gm9" id="www-BD-dtR"/>
+                        <outlet property="picker" destination="jUU-20-Y0F" id="iEX-hL-R8j"/>
+                        <outlet property="resultLabel" destination="929-36-IO1" id="3Nt-Le-pQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
